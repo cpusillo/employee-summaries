@@ -34,6 +34,28 @@ const render = require("./lib/htmlRenderer");
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
 
+function start(){
+    inquirer.prompt(
+        [
+            {
+                name: "startOptions",
+                type: "List",
+                message: "What would you like to do?",
+                choices: [
+                    "Build a Development Team",
+                    "Exit"
+                ]
+            }
+        ]).then((answer) => {
+            if(answer.startOptions === "Build a Development Team"){
+                // call function to build team here
+            }
+            else{
+                process.exit(1);
+            }
+        })
+}
+
 const managerInput = [
     {
         type: "input",
