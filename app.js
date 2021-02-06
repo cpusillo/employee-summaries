@@ -33,3 +33,26 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+
+const managerInput = [
+    {
+        type: "input",
+        name: "name",
+        message: "Manager name: "
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Manager email: "
+    },
+    {
+        type: "input",
+        name: "officeNumber",
+        message: "Manager phone number: "
+    },
+    {
+        type: "number",
+        name: "teamMembers",
+        message: "Enter number of team members: "
+    }
+]
